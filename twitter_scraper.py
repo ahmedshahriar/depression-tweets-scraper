@@ -10,7 +10,7 @@ DATA_PATH.mkdir(parents=True, exist_ok=True)
 # MAX_RESULT = 100
 # DATE_END = '2020-05-08'
 HASHTAG = 'depression'
-JSON_FILENAME = DATA_PATH / str(datetime.datetime.today().date())
+JSON_FILENAME = str(datetime.datetime.today().date())
 
 def sns_scrape():
     os.system(f'snscrape --jsonl --progress --since {DATE_START} twitter-hashtag "{HASHTAG}" > {JSON_FILENAME}.json')
