@@ -29,7 +29,7 @@ jobs:
       with:
         python-version: '3.9'
         cache: 'pip'
-    - run: pip install git+https://github.com/JustAnotherArchivist/snscrape.git
+    - run: pip install -r requirements.txt
     - name: Fetch latest data
       run: python scrape.py
     - name: Commit and push if it changed
