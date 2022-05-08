@@ -44,3 +44,4 @@ if __name__ == "__main__":
 # reference
 # https://betterprogramming.pub/how-to-scrape-tweets-with-snscrape-90124ed006af
 # https://github.com/hansheng0512/tweets-scrapping-using-python
+# https://github.community/t/can-github-actions-directly-edit-files-in-a-repository/17884/7
