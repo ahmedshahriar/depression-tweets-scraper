@@ -31,7 +31,7 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
     - name: Fetch latest data
-      run: python scrape.py
+      run: python twitter_scraper.py
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
