@@ -41,4 +41,8 @@ jobs:
         git add -A
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
-        git push
+    - name: Push changes # push the output folder to your repo
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
