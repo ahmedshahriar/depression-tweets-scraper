@@ -23,7 +23,7 @@ def scrape_twint():
     # c.Until = str(datetime.datetime.today().date() + datetime.timedelta(days=1))
     c.Since = str(datetime.datetime.today().replace(hour=0, minute=0, second=0, microsecond=0) - datetime.timedelta(days=1))
     # c.Username = "test"
-    c.Search = "#depression"
+    c.Search = "indosat"
     c.Location=True
     c.Images = True
     # c.Limit = 50
