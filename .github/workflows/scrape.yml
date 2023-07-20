@@ -13,10 +13,10 @@ name: Scrape depression tweets
 
 on:
   push:
-  workflow_dispatch:
-  schedule:
+#   workflow_dispatch:
+#   schedule:
 #   - cron: '0 0 * * *' # @daily
-  - cron: '0 0 0 0 0' # SNScrape stopped working after June, 2023
+# SNScrape stopped working after June, 2023
 
 jobs:
   scheduled:
